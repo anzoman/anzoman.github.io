@@ -1,0 +1,50 @@
+NAVODILA ZA UPORABO (1. Domača naloga):
+
+V datoteki zip se nahaja poleg te še 7 ostalih datotek, od tega šest .js in ena .html datoteka.
+
+- Vector4f:
+
+Vektor instanciramo s pomočjo konstruktorja, ki sprejme koordinate x, y in z, homogena komponenta pa se nastavi na 1:
+
+    let vector = new Vector4f(1, 2, 3);
+
+Nato lahko nad vektorjem kličemo različne metode, hkrati pa je zaradi statičnosti metode možno klicati tudi direktno na objektu Vector4f:
+
+    let vector = new Vector4f(1, 2, 3);
+    let newVector = Vector4f.negate(vector);
+
+- Matrix4f:
+
+Poljubno matriko 4x4 instanciramo tako, da v klic nove instance podamo 16 parametrov v konstruktor:
+
+    let matrix = new Matrix4f(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+
+Ker so metode znotraj razreda statične jih ponovno lahko kličemo na objektih tipa Matrix4f:
+
+    let matrix = new Matrix4f(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+    let newMatrix = Matrix4f.transpose(matrix);
+
+- Transformation
+
+Razred hrani transformaijsko matriko in ga instanciramo kot. Ta matrika se nato s klicanjem posameznih metod spreminja:
+
+    let transformation = new Transformation();
+    transformation.rotateX(Math.PI / 3);
+    transformation.transformPoint(vector);
+
+- PointManager
+
+Vsebuje dve metodi readVectors() in writeVectors(). Prva prebere vhodne podatke iz textarea in jih ob pravilni sintaksi shrani v vektorje ter na koncu vrne seznam narejenih vektorjev. Druga metoda prejeme kot argument seznam vektorjev in ga zapiše v izhodno polje html. Interakcija med html textarea in PointManager je narejena s pomočjo metode document.getElementById():
+
+    let pm = new PointManager();
+    let vectorList = pm.readVectors();
+    pm.writeVectors(vectorList);
+
+- file.html
+
+Je html datoteka, ki vsebuje vnosno("Input") polje in izhodno("Output") polje. V vnosno polje navedemo vektorje. Transformacije, ki so spisane v razredu TransformPoints izvedemo s klikom na gumb "TRANSFORM VECTORS", kjer se nam po transformaciji na izhodnem polju izpišejo transformirane točke oz. vektorji.
+
+- TransformPoints
+
+Razred vsebuje metodo transform, ki instancira PointManager, skreira transformacijsko matriko, prebere vektorje iz
+vnosnega polja in jih po korakih z uporabo metod iz razreda Transformation transformira po vrsti in jih nato s pomočjo metode writeVectors izpiše v izhodno html polje.
