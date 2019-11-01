@@ -1,4 +1,4 @@
-# Available pages
+# Available pages (at https://anzoman.github.io)
 
 My current pages:
 
