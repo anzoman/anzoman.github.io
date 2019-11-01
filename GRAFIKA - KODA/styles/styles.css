@@ -1,0 +1,173 @@
+body {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#canvas {
+    width: 1500;
+    height: 1000;
+    /* background: #ffffff; */
+    /* background: url('./desert-texture.jpg');   */
+    background: url('../assets/sea-texture.jpg');
+}
+
+#canvases, canvas {
+    /* width: 1920px; */
+    /* height: 1080px; */
+    margin: 0;
+    cursor: crosshair;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#canvases {
+    border: 1px solid #3f3f3f;
+    background: #ffffff;
+}
+
+#shipIcon {
+    width: 80px;
+    height: 55px;
+    top: 660px;
+    left: 375px;
+    background: url("../assets/shipIcon3.gif");
+    background-repeat:no-repeat;
+    position: absolute;
+    background-size:contain;
+}
+
+#finishIcon {
+    width: 80px;
+    height: 50px;
+    top: 675px;
+    left: 600px;
+    background: url("../assets/finishIcon.png");
+    background-repeat:no-repeat;
+    position: absolute;
+    background-size:contain;
+}
+ 
+#list {
+    width: 300px;
+    height: 100%;
+    background: #3f3f3f;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    height: calc(100% - 50px);
+}
+
+ul > li {
+    widows: 100%;
+    height: 50px;
+    background: #484848;
+    margin: 2px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+ul > li.marked {
+    background: #557598;
+}
+
+ul > li:hover {
+    background: #666666;
+}
+
+ul > li > .color {
+    width: 50px;
+    height: 50px;
+    background: #09f020;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+ul > li > .color:hover {
+    opacity: 0.8;
+}
+
+#controlPanel {
+    height: 50px;
+    width: 100%;
+}
+
+.btn {
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#controlPanel > #lockBtn {
+    width: 20%;
+    background: #222222;    
+}
+
+#controlPanel > #lockBtn.active {
+    width: 20%;
+    background: #0277BD;    
+}
+
+#controlPanel > .btn:hover:not(.disabledBtn) {
+    opacity: 1;    
+}
+
+#controlPanel > .disabledBtn {
+    cursor: default !important;
+    opacity: 0.35;
+}
+
+#saveBtn {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: blue;
+    width: 90px;
+    margin: 2px 0 0 0;
+    box-shadow: 0 2px 2px black;
+    border-radius: 10px;
+}
+
+#saveBtn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.deleteBtn{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    background: #000000;
+    opacity: 0.5;
+    color: #ffffff;
+}
+
+.deleteBtn:hover {
+    opacity: 0.8;
+}
+
+.colorInput{
+    width: 50px !important;
+    height: 50px;
+    border: 0;
+    padding: 0;
+}

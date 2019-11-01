@@ -1,0 +1,53 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Metal_pipe
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.690196 0.690196
+Ks 0.060000 0.051765 0.051765
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump MetalBare0204_4_M.jpg
+map_Kd MetalBare0204_4_M.jpg
+
+newmtl Outside_boxes
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.690196 0.690196
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd WoodPlanksOld0151_18_S.jpg
+
+newmtl b0b0b0
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.690196 0.690196
+Ks 0.009961 0.009961 0.009961
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl inside_boxes
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.690196 0.690196
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd WoodRough0089_1_S.jpg
+
+newmtl water
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.690196 0.690196
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump WaterPlain0031_1_S.jpg
+map_Kd WaterPlain0031_1_S.jpg
