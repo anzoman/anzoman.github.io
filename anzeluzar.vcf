@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Luzar;Anže;;;
+FN:Anže Luzar
+ORG:ASTRAY, računalniške storitve, Anže Luzar s.p.
+ADR;TYPE=WORK:Slovenia
+TITLE:Software Engineer
+TEL;TYPE=CELL:
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=WORK:aluzarwork@gmail.com
+URL;TYPE=Digital Business Card:
+URL:
+URL;TYPE=GitHub:https://github.com/anzoman
+URL;TYPE=GitLab:https://gitlab.com/anzoman
+URL;TYPE=Discord:https://discord.com/users/384632354754527233
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:I offer IT services such as DevOps, programming, and consulting. Astray aims to craft solutions by exploring unpaved paths. 
+UID:EnBizCard-100821715
+END:VCARD
